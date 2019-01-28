@@ -7,7 +7,7 @@ import org.springframework.data.repository.CrudRepository;
  * @Author: feibai
  * @description:
  * @Date: Created in 10:57 2019/1/28
- * @Modify by: wushi
+ * @Modify by: feibai
  * @ModifyDate by: 10:57 2019/1/28
  */
 public interface UserRepository extends CrudRepository<User, String> {
