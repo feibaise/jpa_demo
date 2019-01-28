@@ -1,5 +1,12 @@
 package com.feibai.jpa_demo.entity;
 
+import lombok.Getter;
+import lombok.Setter;
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 /**
  *@Author: feibai
  *@description:
@@ -9,4 +16,13 @@ package com.feibai.jpa_demo.entity;
  *
  */
 public class User {
+
+    @Getter
+    @Setter
+    @Id
+    @GeneratedValue(generator = "uuidGenerator")
+    @GenericGenerator(name = "uuidGenerator", strategy = "uuid")
+    private String id;
+
+
 }
